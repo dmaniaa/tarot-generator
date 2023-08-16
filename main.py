@@ -52,7 +52,7 @@ def main():
     random_cards = random.sample(all_cards, 4)
 
     for card in random_cards:
-        if (bool(random.getrandbits(1))):
+        if (random.choice([True, False])):
             card.reversed = True
             card.image = card.image.rotate(180)
     
